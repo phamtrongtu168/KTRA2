@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginApp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/grad1"
+
+        >
+
+        <ImageView
+            android:id="@+id/logo_legends"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+
+
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_tdn"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+
+            android:ems="15"
+            android:hint="Gmail:"
+            android:paddingLeft="16dp" />
+
+        <EditText
+            android:id="@+id/edt_mk"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginTop="-2dp"
+
+            android:ems="15"
+            android:hint="Passwork:"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/bt_loginme"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Đăng Nhập"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên Mật Khẩu"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="or"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/logo_fb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginEnd="145dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="226dp"
+                android:src="@drawable/twitter" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_sigup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có Tài Khoản ?"
+            android:textStyle="bold"
+            />
+
+
+
+</LinearLayout>
+</LinearLayout>

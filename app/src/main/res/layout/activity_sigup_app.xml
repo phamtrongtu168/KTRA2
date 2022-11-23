@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigupApp"
+    android:background="@drawable/grad1"
+    >
+    <RelativeLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:id="@+id/layout_sigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:adjustViewBounds="true"
+
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/siguplogo"
+
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/text_sigup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sigin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="SIGUP NOW"
+            android:textSize="25dp"
+
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/layer1"
+        android:orientation="vertical"
+        android:weightSum="8"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edt_form"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Email"
+            android:layout_weight="2"
+            android:paddingLeft="15dp"
+
+            android:id="@+id/edt_tdn"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="15dp"
+            android:hint="Password"
+            android:layout_weight="2"
+            android:id="@+id/edt_mk"
+            android:inputType="textPassword"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_logupme"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/black"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="SigUp"
+
+
+        />
+
+
+</RelativeLayout>
